@@ -2,7 +2,7 @@
 const contactButton = document.createElement('div');
 contactButton.classList.add('contact-button');
 contactButton.innerHTML = `
-  <button class="contact-redirect-btn">Contact Us</button>
+  <button class="contact-redirect-btn">تواصل مع المطور</button>
 `;
 
 // Append the button to the body
@@ -22,6 +22,7 @@ style.innerHTML = `
     right: 20px;
     bottom: 20px;
     z-index: 1000;
+    
   }
 
   .contact-redirect-btn {
