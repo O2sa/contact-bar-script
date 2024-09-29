@@ -1,32 +1,42 @@
-// Create the contact bar element
-const contactBar = document.createElement('div');
-contactBar.classList.add('contact-bar');
-contactBar.innerHTML = `
-  <p>Contact us: +123-456-7890 | Email: info@example.com</p>
+// Create the button element
+const contactButton = document.createElement('div');
+contactButton.classList.add('contact-button');
+contactButton.innerHTML = `
+  <button class="contact-redirect-btn">Contact Us</button>
 `;
 
-// Append the contact bar to the body
-document.body.appendChild(contactBar);
+// Append the button to the body
+document.body.appendChild(contactButton);
 
-// CSS styles for the contact bar
+// Add click event listener to the button
+const redirectBtn = document.querySelector('.contact-redirect-btn');
+redirectBtn.addEventListener('click', () => {
+  window.location.href = 'https://portflio-drab.vercel.app/'; // Replace with your website URL
+});
+
+// CSS styles for the button
 const style = document.createElement('style');
 style.innerHTML = `
-  .contact-bar {
+  .contact-button {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    right: 20px;
+    bottom: 20px;
     z-index: 1000;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
   }
 
-  body {
-    padding-top: 50px;
+  .contact-redirect-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-redirect-btn:hover {
+    background-color: #0056b3;
   }
 `;
 document.head.appendChild(style);
