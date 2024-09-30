@@ -11,7 +11,7 @@ document.body.appendChild(contactButton);
 // Add click event listener to the button
 const redirectBtn = document.querySelector('.contact-redirect-btn');
 redirectBtn.addEventListener('click', () => {
-    window.open('https://portflio-drab.vercel.app/', '_blank'); // Open the link in a new tab
+    window.open('https://osamamabkhot.vercel.app', '_blank'); // Open the link in a new tab
 });
 
 // CSS styles for the button
